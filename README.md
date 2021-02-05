@@ -64,8 +64,8 @@ Se debe ubicar en la carpeta raiz y ejecutar el comando
 * PostMan Local Collection: https://www.getpostman.com/collections/fa11aa45efabac706897
 
 * Producción:
-    * AWS: quasarchallengeapi-env.eba-6mea83dm.us-east-2.elasticbeanstalk.com/
-    * AWS Swagger  quasarchallengeapi-env.eba-6mea83dm.us-east-2.elasticbeanstalk.com/swagger-ui.html
+    * AWS: http://quasarchallengeapi-env.eba-6mea83dm.us-east-2.elasticbeanstalk.com/
+    * AWS Swagger  http://quasarchallengeapi-env.eba-6mea83dm.us-east-2.elasticbeanstalk.com/swagger-ui.html
 
 ### Domain Driven Design
 
