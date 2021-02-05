@@ -3,7 +3,7 @@
 
 ### Introducción
 
-Para este proyecto decidí utilizar Java Spring Boot para seguir las recomendaciones dadas en la presentación del desafío. A su vez modelé siguiendo el Diseño Guiado por el Dominio ( DDD ) haciendo foco en el modelo y separando las capas. Este desafío fue muy interesante ya que implicó un primer contacto con tecnologías y frameworks que no había tenido la oportunidad de utilizar, como así también la investigación y lectura de documentación de los mismos.
+Para este proyecto decidí utilizar Java Spring Boot para seguir las recomendaciones dadas en la presentación del desafío. A su vez modelé siguiendo el Diseño Guiado por el Dominio ( DDD ) haciendo foco en el modelo y separando las capas. 
 
 ### Distribución del proceso
 
