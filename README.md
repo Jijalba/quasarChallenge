@@ -40,6 +40,7 @@ Para este proyecto decidí utilizar Java Spring Boot para seguir las recomendaci
 * MYSQL 
 * PhpMyAdmin
 * Swagger
+* Docker
 
 ### Nomenclatura
 
@@ -48,7 +49,7 @@ Para la nomenclatura de los diferentes aspectos en el código utilicé la guía 
 
 ### Ejecución del proyecto
 
-*   Para la ejecución del proyecto se necesita JDK 11 y Maven.
+*   Para la ejecución del proyecto se necesita JDK 11 y Maven, ya que el servidor MySql corre en un docker sobre un servidor propio en la nube.
 
 Se debe ubicar en la carpeta raiz y ejecutar el comando
 `mvn spring-boot:run`
