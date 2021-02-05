@@ -3,7 +3,7 @@
 
 ### Introducción
 
-Para este proyecto decidí utilizar Java Spring Boot para seguir las recomendaciones dadas en la presentación del desafío. A su vez modelé siguiendo el Diseño Guiado por el Dominio ( DDD ) haciendo foco en el modelo y separando las capas. 
+Para este proyecto decidí utilizar Java Spring Boot para seguir las recomendaciones dadas en la presentación del desafío. A su vez modelé siguiendo el Diseño Guiado por el Dominio ( DDD ) haciendo foco en el modelo y separando las capas. Este desafío fue muy interesante ya que implicó la utilización de tecnologías y frameworks que no uso en la actualidad y el descubrimiento del potencial de las mismas para el desarrollo backend.
 
 ### Distribución del proceso
 
@@ -77,7 +77,6 @@ Siguiendo este enfoque utilicé una arquitectura de capas donde se divide en:
 * Arquitectura
     * Actua como capa de sorporte, provee infraestructura transversal técnica e implementa la persistencia de datos.
 
-
 ### Patrón Repositorio
 
 El repositorio representa la abstracción de la colección de entidades de un dominio, esta no representa la capa de acceso a datos, ya que es independiente de la forma que se obtenga dicha colección.
@@ -92,7 +91,6 @@ En mi modelado representé la request a los servicios como Transmisiones, estas 
 
 * Descifrado de mensajes:
     * Para esto utilicé una lógica que resuelve el desfasaje inicial en los mensajes mediante la búsqueda de la primer palabra y encontrando así el inicio real de cada Lista de palabras, como así también funciona para mensajes con palabras repetidas.
-
 
 ### Pruebas
 
