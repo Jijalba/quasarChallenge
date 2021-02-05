@@ -30,7 +30,10 @@ public class SingleTransmissionRequest {
 	public void setMessage(List<String> message) {
 		this.message = message;
 	}
-	
-	
+
+	public SingleTransmissionRequest() {
+		this.message = null;
+				
+	}
 	
 }

@@ -21,6 +21,6 @@ public interface IInterceptionRepository {
 	
 	List<List<String>> getUndecodedMessages();
 	
-	List<LocationServiceRequest> getUndecodedSources();
+	List<LocationSource> getUndecodedSources();
 
 }

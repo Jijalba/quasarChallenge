@@ -10,7 +10,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import com.meli.quasarchallenge.model.DomainException;
 import com.meli.quasarchallenge.model.ILocationService;
-import com.meli.quasarchallenge.model.LocationServiceRequest;
+import com.meli.quasarchallenge.model.LocationSource;
 import com.meli.quasarchallenge.model.Position;
 
 @SpringBootTest
@@ -22,11 +22,11 @@ public class LocationServiceTest {
 	@Test
 	public void challengeExampleTest() throws DomainException {
 
-		var sources = new ArrayList<LocationServiceRequest>();
+		var sources = new ArrayList<LocationSource>();
 
-		sources.add(new LocationServiceRequest(608.27,"kenobi"));
-		sources.add(new LocationServiceRequest(0,"skywalker"));
-		sources.add(new LocationServiceRequest(444.21,"sato"));
+		sources.add(new LocationSource(608.27,"kenobi"));
+		sources.add(new LocationSource(0,"skywalker"));
+		sources.add(new LocationSource(444.21,"sato"));
 
 		var sourcePosition = locationService.getLocation(sources);	
 
@@ -37,11 +37,11 @@ public class LocationServiceTest {
 	@Test
 	public void illegalSatellite() throws DomainException {
 
-		var sources = new ArrayList<LocationServiceRequest>();
+		var sources = new ArrayList<LocationSource>();
 
-		sources.add(new LocationServiceRequest(608.27,"kenobi"));
-		sources.add(new LocationServiceRequest(0,"tiePilot"));
-		sources.add(new LocationServiceRequest(444.21,"sato"));
+		sources.add(new LocationSource(608.27,"kenobi"));
+		sources.add(new LocationSource(0,"tiePilot"));
+		sources.add(new LocationSource(444.21,"sato"));
 
 		try {
 			locationService.getLocation(sources);	
@@ -56,7 +56,7 @@ public class LocationServiceTest {
 	@Test
 	public void AllNoData() throws DomainException {
 
-		var sources = new ArrayList<LocationServiceRequest>();
+		var sources = new ArrayList<LocationSource>();
 
 		try {
 			locationService.getLocation(sources);	
@@ -71,10 +71,10 @@ public class LocationServiceTest {
 	@Test
 	public void notEnoughData() throws DomainException {
 
-		var sources = new ArrayList<LocationServiceRequest>();
+		var sources = new ArrayList<LocationSource>();
 
-		sources.add(new LocationServiceRequest(0,"skywalker"));
-		sources.add(new LocationServiceRequest(444.21,"sato"));
+		sources.add(new LocationSource(0,"skywalker"));
+		sources.add(new LocationSource(444.21,"sato"));
 		
 		try {
 			locationService.getLocation(sources);	

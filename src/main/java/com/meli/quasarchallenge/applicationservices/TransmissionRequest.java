@@ -2,6 +2,7 @@ package com.meli.quasarchallenge.applicationservices;
 
 import java.util.List;
 
+
 /*
  * 
  * Request para la recepción de una transmisión múltiple 
@@ -19,6 +20,10 @@ public class TransmissionRequest {
 
 	public void setSatellites(List<SatelliteDto> satellites) {
 		this.satellites = satellites;
+	}
+	
+	public TransmissionRequest() {
+		
 	}
 
 }

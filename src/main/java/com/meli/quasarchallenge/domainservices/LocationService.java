@@ -1,7 +1,9 @@
 package com.meli.quasarchallenge.domainservices;
 
 import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
 import java.util.List;
+import java.util.Locale;
 
 import org.apache.commons.math3.fitting.leastsquares.LeastSquaresOptimizer.Optimum;
 import org.apache.commons.math3.fitting.leastsquares.LevenbergMarquardtOptimizer;
@@ -14,7 +16,7 @@ import com.meli.quasarchallenge.model.DomainException;
 import com.meli.quasarchallenge.model.IInterceptionRepository;
 import com.meli.quasarchallenge.model.ILocationService;
 import com.meli.quasarchallenge.model.ISatellitesRepository;
-import com.meli.quasarchallenge.model.LocationServiceRequest;
+import com.meli.quasarchallenge.model.LocationSource;
 import com.meli.quasarchallenge.model.Position;
 
 @Service
@@ -26,13 +28,14 @@ public class LocationService implements ILocationService {
 	@Autowired
 	IInterceptionRepository interceptions;
 
-	public Position getLocation(List<LocationServiceRequest> locationSources) throws DomainException {
+	public Position getLocation(List<LocationSource> locationSources) throws DomainException {
 
 		double[][] interceptorsPositions = new double[locationSources.size()][2];
 
 		double[] distances = new double[locationSources.size()];
 
 		DecimalFormat decimalFormatter = new DecimalFormat("#.#");
+		decimalFormatter.setDecimalFormatSymbols(new DecimalFormatSymbols(Locale.ENGLISH));
 
 		if(locationSources.isEmpty() || locationSources == null)
 			throw new DomainException("No se recibió información para la fuente de transmisión");

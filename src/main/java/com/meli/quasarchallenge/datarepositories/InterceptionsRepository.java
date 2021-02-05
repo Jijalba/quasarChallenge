@@ -11,7 +11,7 @@ import com.meli.quasarchallenge.infrastructure.InterceptionDetailDao;
 import com.meli.quasarchallenge.infrastructure.InterceptionDetailJpa;
 import com.meli.quasarchallenge.infrastructure.InterceptionJpa;
 import com.meli.quasarchallenge.model.IInterceptionRepository;
-import com.meli.quasarchallenge.model.LocationServiceRequest;
+import com.meli.quasarchallenge.model.LocationSource;
 import com.meli.quasarchallenge.model.Satellite;
 
 @Repository
@@ -33,7 +33,7 @@ public class InterceptionsRepository implements IInterceptionRepository {
 		interceptionJpa.saveAll(interceptions);
 
 	}
-	
+
 	public void decodeInterceptions() {
 
 		var interceptions = interceptionJpa.findByDecodedAndDeprecated(false,false);
@@ -78,7 +78,7 @@ public class InterceptionsRepository implements IInterceptionRepository {
 
 			var details = interceptionDetailJpa.findByInterceptionId(interception.getInterceptionId());
 
-			response.add(details.stream().map(d -> d.getWord()).collect(Collectors.toList()));
+			response.add(details.stream().map(d -> d.getWord()).filter(w -> w != null).collect(Collectors.toList()));
 
 		}
 
@@ -86,11 +86,14 @@ public class InterceptionsRepository implements IInterceptionRepository {
 
 	}
 
-	public List<LocationServiceRequest> getUndecodedSources() {
+	public List<LocationSource> getUndecodedSources() {
 
 		var undecoded = interceptionJpa.findByDecodedAndDeprecated(false,false);
 
-		var response = undecoded.stream().map(i -> new LocationServiceRequest(i.getDistance(),i.getSatelliteId())).collect(Collectors.toList());
+		var response = undecoded.stream()
+				.map(i -> new LocationSource(i.getDistance(),i.getSatelliteId()))
+				.collect(Collectors.toList());
+
 
 		return response;
 

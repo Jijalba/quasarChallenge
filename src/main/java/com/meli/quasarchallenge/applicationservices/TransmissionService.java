@@ -9,7 +9,7 @@ import com.meli.quasarchallenge.model.IInterceptionRepository;
 import com.meli.quasarchallenge.model.ILocationService;
 import com.meli.quasarchallenge.model.IMessageService;
 import com.meli.quasarchallenge.model.ISingleInterceptionService;
-import com.meli.quasarchallenge.model.LocationServiceRequest;
+import com.meli.quasarchallenge.model.LocationSource;
 
 @Service
 public class TransmissionService implements ITransmissionService {
@@ -39,7 +39,7 @@ public class TransmissionService implements ITransmissionService {
 
 		var locationSources = request.getSatellites()
 				.stream()
-				.map(s -> new LocationServiceRequest(s.getDistance(),s.getName()))
+				.map(s -> new LocationSource(s.getDistance(),s.getName()))
 				.collect(Collectors.toList());
 
 		if(messageList.size() < 3 || locationSources.size() < 3)

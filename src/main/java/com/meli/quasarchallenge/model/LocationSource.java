@@ -8,7 +8,7 @@ package com.meli.quasarchallenge.model;
  * satelliteName: Id del satélite que interceptó la transmisión.
  * 
  */
-public class LocationServiceRequest {
+public class LocationSource {
 
 	double distance;
 
@@ -35,7 +35,7 @@ public class LocationServiceRequest {
 	}
 
 
-	public LocationServiceRequest(double distance, String satelliteName) {
+	public LocationSource(double distance, String satelliteName) {
 		this.distance = distance;
 		this.satelliteName = satelliteName;
 	

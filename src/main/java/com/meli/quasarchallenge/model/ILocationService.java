@@ -17,6 +17,6 @@ public interface ILocationService {
 	 * Se intenta ubicar la posición de la fuente, 
 	 * en su defecto se avisa con una Excepción de Dominio
 	 */
-	public Position getLocation(List<LocationServiceRequest> locationsSources) throws DomainException;
+	public Position getLocation(List<LocationSource> locationsSources) throws DomainException;
 	
 }
