@@ -11,8 +11,9 @@
 	</parent>
 	<groupId>com.meli.quasarchallenge</groupId>
 	<artifactId>com.meli.quasarchallenge</artifactId>
-	<version>0.0.1</version>
+	<version>1.0.1</version>
 	<name>com.meli.quasarchallenge</name>
+	<packaging>jar</packaging>
 	<description>Desafío Quasar Mercado Libre</description>
 	<properties>
 		<java.version>11</java.version>
