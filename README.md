@@ -7,26 +7,26 @@ Para este proyecto decidí utilizar Java Spring Boot para seguir las recomendaci
 
 ### Distribución del proceso
 
-* 1) Viernes 29-1:
+* 1- Viernes 29-1:
     * Definición de tecnologías.
     * Análisis de requerimientos.
     * Instalación y seteo de los entornos.
-* 2) Sábado 30-1:
+* 2- Sábado 30-1:
     * Definición de estrategia para getLocation.
-* 3) Domingo 31-:
+* 3- Domingo 31-:
     * Definición de estrategia para getMessage.
     * Definición del modelo.
-* 4) Lunes 1-2:
+* 4- Lunes 1-2:
     * Despliegue inicial del modelo.
-* 5) Martes 2-2:
+* 5- Martes 2-2:
     * Desarrollo de la solución.
-* 6) Miércoles 3-2:
+* 6- Miércoles 3-2:
     * Correción de bug en getMessage por palabras repetidas.
-* 7) Jueves 4-2:
+* 7- Jueves 4-2:
     * Pruebas manuales.
     * Generación de pruebas unitarias.
     * Documentación en código.
-* 8) Viernes 5-2:
+* 8- Viernes 5-2:
     * Configuración de Swagger.
     * Distribución en github.
     * Despliegue en AWS.
@@ -62,10 +62,10 @@ Se debe ubicar en la carpeta raiz y ejecutar el comando
 * MySql Server:  vps-1917979-x.dattaweb.com:3306
 * PhpMyAdmin: http://vps-1917979-x.dattaweb.com:8080/
 * PostMan Local Collection: https://www.getpostman.com/collections/fa11aa45efabac706897
- -
+
 * Producción:
-      * AWS: quasarchallengeapi-env.eba-6mea83dm.us-east-2.elasticbeanstalk.com/
-      * AWS Swagger  quasarchallengeapi-env.eba-6mea83dm.us-east-2.elasticbeanstalk.com/swagger-ui.html
+    * AWS: quasarchallengeapi-env.eba-6mea83dm.us-east-2.elasticbeanstalk.com/
+    * AWS Swagger  quasarchallengeapi-env.eba-6mea83dm.us-east-2.elasticbeanstalk.com/swagger-ui.html
 
 ### Domain Driven Design
 
