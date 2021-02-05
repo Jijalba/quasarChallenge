@@ -61,7 +61,7 @@ Se debe ubicar en la carpeta raiz y ejecutar el comando
 * Local Swagger  http://localhost:8080/swagger-ui.html
 * MySql Server:  vps-1917979-x.dattaweb.com:3306
 * PhpMyAdmin: http://vps-1917979-x.dattaweb.com:8080/
-* PostMan Local Collection: https://www.getpostman.com/collections/fa11aa45efabac706897
+* PostMan Collection: https://www.getpostman.com/collections/fa11aa45efabac706897
 
 * Producción:
     * AWS: http://quasarchallengeapi-env.eba-6mea83dm.us-east-2.elasticbeanstalk.com/
