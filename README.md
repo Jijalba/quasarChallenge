@@ -41,6 +41,7 @@ Para este proyecto decidí utilizar Java Spring Boot para seguir las recomendaci
 * PhpMyAdmin
 * Swagger
 * Docker
+* Postman
 
 ### Nomenclatura
 
