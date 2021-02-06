@@ -57,10 +57,10 @@ Se debe ubicar en la carpeta raiz y ejecutar el comando
 
 ### Direcciones
 
-* Localhost: http://localhost:8080
+* Localhost: http://localhost:5000
      * /topsecret/
      * /topsecret_split/
-* Local Swagger  http://localhost:8080/swagger-ui.html
+* Local Swagger  http://localhost:5000/swagger-ui.html
 * MySql Server:  vps-1917979-x.dattaweb.com:3306
 * PhpMyAdmin: http://vps-1917979-x.dattaweb.com:8080/
 * PostMan Collection: https://www.getpostman.com/collections/fa11aa45efabac706897
